@@ -1,7 +1,9 @@
-package de.exxcellent.challenge;
+package de.programming.challenge;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -24,7 +26,7 @@ class AppTest {
     }
 
     @Test
-    void runFootball() {
+    void runFootball() throws IOException {
         App.main("--football", "football.csv");
     }
 
